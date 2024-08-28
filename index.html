@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Desencriptador</title>
+    <link rel="shortcut icon" href="/img/lock.png" type="image/x-icon">
+</head>
+<body>
+    <img class="logo" src="/img/Logo.png" alt="Logo Alura">
+    
+    <main class="container container__vertical">
+
+        <div class="container container__vertical container__secctions">
+
+            <div class="container container__vertical container__areaTexto">
+                <textarea id="input_texto" placeholder="Ingrese el texto aquí" class="area-texto"></textarea>
+            </div>
+
+            <section class="container container__vertical container container__encriptado">
+                <div id="no_output_container" class="container container__vertical container__muñeco">
+                    <img src="img/Muñeco.png" alt="imagen de muñeco observando con lupa">
+                    <div class="container container__vertical">
+                        <h3 class="texto-h3">Ningún mensaje fue <br> encontrado</h3>
+                        <p class="texto-p">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div id="output_container" class="container container__vertical container__sin__texto display-none">
+                    <p id="textbox_resultado" class="texto-p2"></p>
+                    <button id="btn-copiar" class="button-base button-tipo2">Copiar</button>
+                </div>
+
+            </section>
+
+
+            <div class="container container__vertical container__buttons">
+
+                <div class="container container__terminos">
+                    <img class="logoAlerta" src="img/bi_exclamation-circle-fill.png" alt="Atención">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="container container__botones__encriptar-desencriptar">
+                    <button id="btn-encriptar" class="button-base">Encriptar</button>
+                    <button id="btn-desencriptar" class="button-base button-tipo2">Desencriptar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__enlaces">
+            <h3 class="footer__enlaces__subtitulo">Diseñado por Luciano Gómez</h3>
+            <div class="container container__caja-enlaces">
+               <div class="container container__enlaces">
+
+                    <a class="btn-links" href="https://github.com/LuchoGomez98">
+                        <img src="/img/github.png" alt="Enlace a Github">
+                    </a>
+
+                    <a class="btn-links" href="https://www.instagram.com/luchogmz/">
+                        <img src="/img/instagram.png" alt="Enlace a Instagram">
+                    </a>
+
+                    <a class="btn-links" href="https://www.linkedin.com/in/luciano-ayrton-g%C3%B3mez-981088248/">
+                        <img src="/img/linkedin.png" alt="Enlace a LinkedIn">
+                    </a>
+
+                </div>
+    
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>

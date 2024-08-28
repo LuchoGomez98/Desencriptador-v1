@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Inter", sans-serif;
+}
+
+:root{
+    --color-fondo:#E9ECF8;
+    --color-blanco: white;
+    --color-azul: #0A3871;
+    --color-botondesencriptar:#D8DFE8;
+    --color-gray400:#9CA3AF;
+    --color-gray500: #6B7280;
+
+    --fuente-inter:"Inter", sans-serif;
+}
+
+main{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: calc(100vh - 32px);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.container__vertical{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.logo{
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    width: 120px;
+    height: 48px;
+    z-index: 100;
+}
+
+.container__secctions{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fondo);
+}
+
+.container__areaTexto{
+    
+    position:absolute;
+    box-sizing: border-box;
+    top: 15%;
+    left: 240px;
+    width: 680px;
+    height: 450px;
+}
+
+.area-texto{
+    position: absolute;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    font-family: var(--fuente-inter);
+    background-color: var(--color-fondo);
+}
+
+.area-texto::placeholder{
+    color: var(--color-azul);
+}
+
+.container__encriptado{
+    position: absolute;
+    box-sizing: border-box;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    width: 400px;
+    height: calc(100vh - 40px);
+    padding: 32px;
+    background-color: var(--color-blanco);
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.container__sin__texto{
+    height: 100%;
+    justify-content: space-between;
+}
+
+.container__muñeco{
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+}
+
+.container__muñeco img{
+    margin-bottom: 32px;
+    width: 336px;
+}
+
+.texto-h3{
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--fuente-inter);
+    font-weight: bold;
+    color: var(--color-gray500);
+
+}
+.texto-p{
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    color: var(--color-gray400);
+}
+
+.texto-p2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: var(--fuente-inter);
+    color: var(--color-gray400);
+}
+
+.display-none{
+    display: none;
+}
+
+.container__buttons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 240px;
+    bottom: 32px;
+    width: 680px;
+    height: 101px;
+    
+}
+
+.container__terminos{
+    font-size: 12px;
+    font-family: var(--fuente-inter);
+    display: flex;
+    gap: 8px;
+    color: var(--color-gray400);
+}
+
+.logoAlerta{
+    width: 16px;
+    height: 16px;
+    color: var(--color-gray400);
+}
+
+
+.container__botones__encriptar-desencriptar{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: flex-end;
+    flex-grow: 1;
+
+}
+
+.button-base{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    font-size: 16px;
+    font-weight: 400;
+    font-family:var(--fuente-inter);
+    border: none;
+    cursor: pointer;
+
+}
+
+.button-tipo2{
+    background-color: var(--color-botondesencriptar);
+    color: var(--color-azul);
+}
+
+footer{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 32px;
+    background-color: var(--color-azul);
+}
+
+.footer__enlaces{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__enlaces__subtitulo{
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-blanco);
+    font-family: var(--fuente-inter);
+
+}
+
+.container__enlaces{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-links img{
+    width: 24px;
+    height: 24px;
+}
+
